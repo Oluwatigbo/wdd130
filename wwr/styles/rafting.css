@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #525252;
+    --secondary-color: #8a8a8a;
+    --accent1-color: #696969;
+    --accent2-color: #ffffff;
+}
+
+body {
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+/* Specific selector to remove underline for social media links */
+footer a img {
+    text-decoration: none; /* Ensures icons don't have underlines */
+}
+
+/* Container for the Hero section */
+.hero {
+    position: relative; /* Establishes a positioning context for absolutely positioned children */
+    width: 100%; /* Full width of the container */
+    overflow: hidden; /* Ensures no overflow from the image or elements */
+}
+
+/* Image styling */
+.hero img {
+    display: block; /* Removes the bottom space below images */
+    width: 100%; /* Makes the image fit the width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* Styling for the absolute positioned h1 */
+.hero h1 {
+    position: absolute; /* Allows for positioning over the image */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    color: white; /* Ensures visibility against the image */
+    font-size: 2.5em; /* Change to fit your design */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: adds depth for readability */
+}
+
+/* Article container styling */
+.hero article {
+    position: absolute; /* Positions the article over the image */
+    bottom: 20px; /* Adjust to fit layout */
+    left: 20px; /* Adjust to fit layout */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
+    color: white; /* Text color for readability */
+    padding: 10px; /* Spacing inside the article */
+    border-radius: 5px; /* Optional: rounds the corners */
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.hero article p {
+    margin: 0;
+}
