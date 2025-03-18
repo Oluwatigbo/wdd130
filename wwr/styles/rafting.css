@@ -6,63 +6,124 @@
 }
 
 body {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: var(--primary-color);
+    line-height: 1.6;
 }
 
-h1, h2 {
-    color: var(--primary-color);
+/* Header styles */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
 }
 
-/* Specific selector to remove underline for social media links */
-footer a img {
-    text-decoration: none; /* Ensures icons don't have underlines */
+.logo {
+    max-width: 100px; /* Adjust as needed */
 }
 
-/* Container for the Hero section */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero section styles */
 .hero {
-    position: relative; /* Establishes a positioning context for absolutely positioned children */
-    width: 100%; /* Full width of the container */
-    overflow: hidden; /* Ensures no overflow from the image or elements */
+    position: relative;
+    text-align: center;
 }
 
-/* Image styling */
-.hero img {
-    display: block; /* Removes the bottom space below images */
-    width: 100%; /* Makes the image fit the width of its container */
-    height: auto; /* Maintains the aspect ratio of the image */
-}
-
-/* Styling for the absolute positioned h1 */
-.hero h1 {
-    position: absolute; /* Allows for positioning over the image */
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    color: white; /* Ensures visibility against the image */
-    font-size: 2.5em; /* Change to fit your design */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: adds depth for readability */
-}
-
-/* Article container styling */
-.hero article {
-    position: absolute; /* Positions the article over the image */
-    bottom: 20px; /* Adjust to fit layout */
-    left: 20px; /* Adjust to fit layout */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
-    color: white; /* Text color for readability */
-    padding: 10px; /* Spacing inside the article */
-    border-radius: 5px; /* Optional: rounds the corners */
-}
-
-.hero article img {
-    float: right;
-    margin-left: 10px;
-    width: 50px;
+.hero-img {
+    width: 100%;
     height: auto;
 }
 
-.hero article p {
+/* Article styles */
+article {
+    margin: 20px 0;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* History section styles */
+.history {
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+/* Adventures section styles */
+.adventures {
+    padding: 20px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; /* Space between images */
+}
+
+figure {
     margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    margin-left: 10px; /* Space between social icons */
+}
+
+.social-media img {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
 }
