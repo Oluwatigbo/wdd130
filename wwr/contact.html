@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us for inquiries, reservations, or suggestions. Contact Whitewater Rafting today!">
+    <meta name="author" content="Oluwatigbo Alao">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Contact Us - White Water Rafting</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="White Water Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Contact Us</h1>
+            <section>
+                <h2>Contact Information</h2>
+                <p>Address: 123 River Road, Rafting City, RA 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@whitewaterrafting.com</p>
+            </section>
+
+            <section>
+                <h2>Find Us Here</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+
+            <section>
+                <h2>Meet Our Team</h2>
+                <figure>
+                    <img src="images/employee1.webp" alt="Employee 1">
+                    <figcaption>Oluwatise Timothy - Rafting Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.webp" alt="Employee 2">
+                    <figcaption>Olatide Janet - Customer Service</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.webp" alt="Employee 3">
+                    <figcaption>Oreoluwa Deborah - Safety Officer</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Contact Form</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="purpose">Purpose of Message:</label>
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
+                    <label for="inquiry">General Inquiry</label>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 White Water Rafting | Oluwatigbo Alao</p>
+        <a href="http://facebook.com"><img src="images/Colored_Facebook3_svg-64.webp" alt="Facebook"></a>
+        <a href="http://twitter.com"><img src="images/BW_Twitter_glyph_svg-64.webp" alt="Twitter"></a>
+        <a href="http://instagram.com"><img src="images/1_Instagram_colored_svg_1-64.webp" alt="Instagram"></a>
+        <a href="link_to_wireframe_image" target="_blank">View Contact Us Wireframe</a>
+    </footer>
+</body>
+</html>
