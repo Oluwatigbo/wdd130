@@ -127,3 +127,83 @@ footer p {
     width: 30px; /* Adjust size as needed */
     height: auto;
 }
+
+* Contact Page Styles */
+.contact-info {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.contact-info h2 {
+    color: var(--primary-color);
+}
+
+.contact-info p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Google Map Styles */
+iframe {
+    width: 100%; /* Make the map responsive */
+    height: 450px; /* Fixed height for the map */
+    border: none; /* Remove default border */
+}
+
+/* Employee Profile Styles */
+.team {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of employee figures */
+    justify-content: space-around; /* Space out team members */
+    padding: 20px;
+}
+
+figure {
+    margin: 10px; /* Space around each figure */
+    text-align: center;
+    width: 30%; /* Adjust width for responsiveness */
+}
+
+figure img {
+    border-radius: 50%; /* Make employee images circular */
+    width: 80%; /* Responsive size */
+    height: auto;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    max-width: 600px; /* Limit form width */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: #ffffff; /* White background for form */
+    border: 1px solid var(--secondary-color); /* Border for form */
+    border-radius: 5px; /* Rounded corners */
+}
+
+label {
+    margin: 10px 0 5px; /* Space above and below labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold;
+}
