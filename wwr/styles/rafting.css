@@ -127,3 +127,53 @@ footer p {
     width: 30px; /* Adjust size as needed */
     height: auto;
 }
+
+/* Google Map Styles */
+iframe {
+    width: 100%; /* Make the map responsive */
+    height: 450px; /* Fixed height for the map */
+    border: none; /* Remove default border */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    max-width: 600px; /* Limit form width */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: #ffffff; /* White background for form */
+    border: 1px solid var(--secondary-color); /* Border for form */
+    border-radius: 5px; /* Rounded corners */
+}
+
+label {
+    margin: 10px 0 5px; /* Space above and below labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--accent1-color); /* Darker shade on hover */
+}
