@@ -1,9 +1,8 @@
 :root {
-    --primary-color: #525252; /* Main text color */
-    --secondary-color: #8a8a8a; /* Secondary text color */
-    --accent1-color: #696969; /* Button hover color */
-    --accent2-color: #ffffff; /* Background color for buttons */
-    --background-color: #f8f8f8; /* General background color */
+    --primary-color: #525252;
+    --secondary-color: #8a8a8a;
+    --accent1-color: #696969;
+    --accent2-color: #ffffff;
 }
 
 body {
@@ -11,7 +10,6 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: var(--background-color);
 }
 
 /* Header styles */
@@ -20,13 +18,20 @@ header {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 20px;
-    background-color: var(--accent2-color);
+    background-color: #f8f8f8;
 }
 
 .logo {
     max-width: 100px; /* Adjust as needed */
 }
 
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Navigation styles */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -45,7 +50,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #333;
     font-weight: bold;
 }
 
@@ -53,98 +58,48 @@ nav a {
 .hero {
     position: relative;
     text-align: center;
-    padding: 20px;
 }
 
 .hero-img {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Limit height for hero image */
-    object-fit: cover; /* Cover the area without distortion */
 }
 
-h1 {
-    font-size: 2.5em;
+/* Article styles */
+article {
     margin: 20px 0;
-    color: var(--primary-color);
 }
 
-/* Call to Action Button */
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
+article img {
+    max-width: 100%;
+    height: auto;
 }
 
-.cta-button:hover {
-    background-color: var(--accent1-color);
-}
-
-/* Newsletter styles */
-.newsletter {
-    text-align: center;
+/* History section styles */
+.history {
     padding: 20px;
-    background-color: #eaeaea; /* Light background for contrast */
+    background-color: #eaeaea;
 }
 
-.newsletter h2 {
-    color: var(--primary-color);
+/* Adventures section styles */
+.adventures {
+    padding: 20px;
 }
 
-.newsletter form {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.newsletter input[type="email"] {
-    padding: 10px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-.newsletter button {
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.newsletter button:hover {
-    background-color: var(--accent1-color);
-}
-
-/* Trips page styles */
-.trip-list {
+.adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between trip items */
-    padding: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; /* Space between images */
 }
 
-.trip {
-    background-color: var(--accent2-color);
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    padding: 15px;
+figure {
+    margin: 0;
     text-align: center;
 }
 
-.trip img {
+figure img {
     width: 100%; /* Make images responsive */
     height: auto;
-    border-radius: 5px; /* Rounded corners for images */
-}
-
-.trip h2 {
-    color: var(--primary-color);
 }
 
 /* Footer styles */
@@ -153,12 +108,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--accent2-color);
+    background-color: #f8f8f8;
 }
 
 footer p {
     margin: 0;
-    color: var(--primary-color);
 }
 
 .social-media {
@@ -172,4 +126,88 @@ footer p {
 .social-media img {
     width: 30px; /* Adjust size as needed */
     height: auto;
+}
+
+/* Contact Page Styles */
+.contact-info {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.contact-info h2 {
+    color: var(--primary-color);
+}
+
+.contact-info p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Google Map Styles */
+iframe {
+    width: 100%; /* Make the map responsive */
+    height: 450px; /* Fixed height for the map */
+    border: none; /* Remove default border */
+}
+
+/* Employee Profile Styles */
+.team {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of employee figures */
+    justify-content: space-around; /* Space out team members */
+    padding: 20px;
+}
+
+figure {
+    margin: 10px; /* Space around each figure */
+    text-align: center;
+    width: 30%; /* Adjust width for responsiveness */
+}
+
+figure img {
+    border-radius: 50%; /* Make employee images circular */
+    width: 80%; /* Responsive size */
+    height: auto;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    max-width: 600px; /* Limit form width */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: #ffffff; /* White background for form */
+    border: 1px solid var(--secondary-color); /* Border for form */
+    border-radius: 5px; /* Rounded corners */
+}
+
+label {
+    margin: 10px 0 5px; /* Space above and below labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--accent1-color); /* Darker shade on hover */
 }
