@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #525252;
-    --secondary-color: #8a8a8a;
-    --accent1-color: #696969;
-    --accent2-color: #ffffff;
+    --primary-color: #525252; /* Main text color */
+    --secondary-color: #8a8a8a; /* Secondary text color */
+    --accent1-color: #696969; /* Button hover color */
+    --accent2-color: #ffffff; /* Background color for buttons */
+    --background-color: #f8f8f8; /* General background color */
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: var(--background-color);
 }
 
 /* Header styles */
@@ -18,20 +20,13 @@ header {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: var(--accent2-color);
 }
 
 .logo {
     max-width: 100px; /* Adjust as needed */
 }
 
-h1 {
-    text-align: center;
-    font-size: 2em;
-    margin: 0;
-}
-
-/* Navigation styles */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -50,7 +45,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -58,48 +53,98 @@ nav a {
 .hero {
     position: relative;
     text-align: center;
+    padding: 20px;
 }
 
 .hero-img {
     width: 100%;
     height: auto;
+    max-height: 400px; /* Limit height for hero image */
+    object-fit: cover; /* Cover the area without distortion */
 }
 
-/* Article styles */
-article {
+h1 {
+    font-size: 2.5em;
     margin: 20px 0;
+    color: var(--primary-color);
 }
 
-article img {
-    max-width: 100%;
-    height: auto;
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
 }
 
-/* History section styles */
-.history {
+.cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Newsletter styles */
+.newsletter {
+    text-align: center;
     padding: 20px;
-    background-color: #eaeaea;
+    background-color: #eaeaea; /* Light background for contrast */
 }
 
-/* Adventures section styles */
-.adventures {
-    padding: 20px;
+.newsletter h2 {
+    color: var(--primary-color);
 }
 
-.adventure-gallery {
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Trips page styles */
+.trip-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px; /* Space between images */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between trip items */
+    padding: 20px;
 }
 
-figure {
-    margin: 0;
+.trip {
+    background-color: var(--accent2-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 15px;
     text-align: center;
 }
 
-figure img {
+.trip img {
     width: 100%; /* Make images responsive */
     height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.trip h2 {
+    color: var(--primary-color);
 }
 
 /* Footer styles */
@@ -108,11 +153,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f8f8;
+    background-color: var(--accent2-color);
 }
 
 footer p {
     margin: 0;
+    color: var(--primary-color);
 }
 
 .social-media {
